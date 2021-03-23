@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style-sheet.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <!-- Navbar -->
@@ -224,7 +228,7 @@
                       type="button"
                       class="btn btn-danger btn-lg btnCenter"
                       data-bs-toggle="modal"
-                      data-bs-target=".kf-modal"
+                      data-bs-target=".flip-modal"
                     >
                       360 Flip
                     </button>
@@ -239,7 +243,7 @@
                       type="button"
                       class="btn btn-danger btn-lg btnCenter"
                       data-bs-toggle="modal"
-                      data-bs-target=".kf-modal"
+                      data-bs-target=".bs-modal"
                     >
                       BS Crook
                     </button>
@@ -250,6 +254,29 @@
           </div>
         </div>
       </div>
+
+      <!-- Footer -->
+
+      <footer class="footer bg-dark">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-12 col-lg-3">
+              <img class="img-fluid footerImg" src="img/KFS_LIGHT.png" />
+            </div>
+            <div class="col-sm-12 col-lg-9 social">
+              <a href="https://facebook.com" target="_blank">
+                <i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i
+              ></a>
+              <a href="https://google.com" target="_blank">
+                <i class="fa fa-google-plus-square fa-3x" aria-hidden="true"></i
+              ></a>
+              <a href="https://instagram.com" target="_blank">
+                <i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
 
       <!-- Modal1 -->
       <div
@@ -288,7 +315,7 @@
                             >What's your name?</label
                           >
                           <input
-                            type="email"
+                            type="text"
                             class="form-control"
                             id="formName"
                             aria-describedby="nameHelp"
@@ -300,7 +327,7 @@
                             >Where should we send your cool content?
                           </label>
                           <input
-                            type="password"
+                            type="email"
                             class="form-control"
                             id="formEmail"
                             placeholder="Email"
@@ -315,10 +342,10 @@
             <div class="modal-footer">
               <button
                 type="button"
-                class="btn btn-secondary"
+                class="btn btn-primary"
                 data-bs-dismiss="modal"
               >
-                Close
+                Send
               </button>
             </div>
           </div>
@@ -327,9 +354,58 @@
     </div>
 
     <!-- Modal2  -->
-    <!-- <div class="modal-dialog modal-lg kf-modal">...</div>
-    <div class="modal-dialog modal-sm kf-modal">...</div>
-    <div class="modal-dialog modal-xl kf-modal">...</div> -->
+
+    <div class="modal kf-modal" tabindex="-1">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="ratio ratio-16x9">
+              <iframe
+                src="https://www.youtube.com/embed/TIy3n2b7V9k"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal flip-modal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="ratio ratio-4x3">
+              <iframe
+                src="https://www.youtube.com/embed/TIy3n2b7V9k"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal bs-modal" tabindex="-1">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="ratio ratio-21x9">
+              <iframe
+                src="https://www.youtube.com/embed/TIy3n2b7V9k"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="js/bootstrap.min.js"></script>
   </body>
