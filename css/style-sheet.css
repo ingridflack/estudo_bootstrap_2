@@ -1,0 +1,65 @@
+.welcome-title {
+  padding-right: 0;
+  padding-left: 0;
+  border: 0;
+  text-align: center;
+}
+
+.welcome-title {
+  font-size: 4rem;
+  font-weight: 300;
+  line-height: 1.1;
+  margin-top: 40px;
+}
+
+.welcome-description {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.sectionLight {
+  background-color: #eceeef;
+  padding: 2rem;
+}
+
+.sectionDark {
+  background-color: #cccccc;
+  padding: 2rem;
+}
+
+.coolStuffWrapper {
+  margin-top: 20px;
+}
+
+.coolStuffBtn {
+  background-color: red;
+  color: #ffffff;
+  display: block;
+  margin: auto;
+}
+
+.modal-title {
+  margin: auto;
+  text-align: center;
+}
+
+.btn-close {
+  position: absolute;
+  right: 1rem;
+}
+
+.modalFormWrapper {
+  padding: 2rem;
+}
+
+.imgCenter,
+.btnCenter {
+  display: block;
+  margin: auto;
+}
+
+.btnCenter {
+  margin-top: 15px;
+  margin-bottom: 20px;
+  width: 68%;
+}
